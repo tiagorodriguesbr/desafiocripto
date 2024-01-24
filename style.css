@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('code.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Ajuste o espaçamento conforme necessário */
+    background-image: url('img1.png');
+    background-size: cover;
+}
+
+.input-container, .result-container {
+    width: 40%;
+}
+
+label {
+    margin-right: 10px; /* Reduzi a margem para um alinhamento melhor */
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+select, button {
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-text {
+    text-align: left;
+    color: black;
+}
+
+.result-text p {
+    margin: 5px 0;
+}
+
+.encrypted-text-container.input-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#encodedText {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 1700px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    background-image: url('dev.png');
+}
+
+footer img {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: auto;
+}
+
+/* Removido o estilo duplicado */
+.encrypted-text-container.input-box {
+    background-image: url('imagem1.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
