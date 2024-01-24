@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CryptoApp</title>
+    <h1>CriptoApp</h1>
+
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <label for="inputText"><p style="font-size: 18px; font-weight: bold;">Digite o texto:</p></label>
+            <textarea id="inputText" placeholder="Insira o texto"></textarea>
+            <button onclick="processText()">Processar</button>
+            <select id="operation">
+                <option value="encrypt">Criptografar</option>
+                <option value="decrypt">Descriptografar</option>
+            </select>
+        </div>
+        <div class="result-container">
+            <div class="result-text">
+                <div class="encrypted-text-container input-box">
+                    <label for="modifiedText"><p style="font-size: 18px; font-weight: bold;">Texto Modificado:</p></label>
+                    <textarea id="modifiedText" readonly></textarea>
+                </div>
+            </div>
+            <button onclick="copyToClipboard()">Copiar</button>
+        </div>
+    </div>
+    <footer>
+        <p style="font-size: 18px; font-weight: bold;">Desenvolvido por Tiago Rodrigues</p>
+        <p style="font-size: 18px; font-weight: bold;">https://github.com/tiagorodriguesbr</p>
+      </footer>
+      <div class="encrypted-text-container input-box">
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
